@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Shorts Studio Autopilot</title>
+<style>
+  :root { --ink:#111; --bg:#faf7f0; --acc:#ffd400; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font:800 34px/1.2 "Segoe UI", Arial, sans-serif; margin:0 0 6px; }
+  h2 { font:700 21px/1.3 "Segoe UI", Arial, sans-serif; margin:36px 0 8px; border-left:6px solid var(--acc); padding-left:12px; }
+  .meta { color:#555; font-size:15px; }
+  a { color:#0645ad; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#eee; --bg:#161616; } a { color:#8ab4f8; } .meta { color:#aaa; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Shorts Studio Autopilot · effective 2026-11-08 · <a href="index.html">about the tool</a></p>
+
+<p><strong>Shorts Studio Autopilot</strong> is a private, single-user software tool that its owner runs on their own computer to
+publish videos to, and read statistics and comments from, the owner's <em>own</em> YouTube channels. It is not offered to the
+public, has no user accounts, and is not distributed to anyone else.</p>
+
+<h2>1. What the tool accesses</h2>
+<p>Through the <a href="https://developers.google.com/youtube/v3">YouTube Data API</a> and the
+<a href="https://developers.google.com/youtube/analytics">YouTube Analytics API</a>, authenticated with the owner's own Google
+account via OAuth 2.0, the tool:</p>
+<ul>
+  <li>uploads the owner's own videos with the title, description and tags the owner prepared;</li>
+  <li>reads public statistics (views, likes, subscriber counts) and analytics reports for the owner's own channels and videos;</li>
+  <li>reads comments posted on the owner's own videos and posts the owner's replies to them;</li>
+  <li>updates metadata (title, description, category, privacy status) of the owner's own videos.</li>
+</ul>
+<p>Scopes used: <code>youtube.upload</code>, <code>youtube.readonly</code>, <code>youtube.force-ssl</code>,
+<code>yt-analytics.readonly</code>.</p>
+
+<h2>2. Data about other people</h2>
+<p>The only data about people other than the owner that the tool processes is the public content of comments on the owner's
+videos (comment text, display name, channel id), fetched so the owner can answer them. This data is cached on the owner's
+computer for up to 30 days, is used solely to display and answer comments, and is never sold, shared, combined with other
+sources, used for advertising, or used to train machine-learning models.</p>
+
+<h2>3. Storage and security</h2>
+<p>All data (OAuth tokens, cached statistics, comment cache, a local SQLite database) is stored only on the owner's computer.
+Tokens are kept in a local folder outside any shared or published directory. No data is sent to third-party servers other than
+Google's APIs, except an optional push notification to the owner's own phone containing aggregate view counts.</p>
+
+<h2>4. Cookies and tracking</h2>
+<p>The tool has no public website, uses no cookies and no analytics or advertising trackers.</p>
+
+<h2>5. Google's policies</h2>
+<p>Use of YouTube API Services is subject to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The tool complies with the
+<a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a> and
+<a href="https://developers.google.com/youtube/terms/developer-policies">Developer Policies</a>.</p>
+
+<h2>6. Revoking access</h2>
+<p>The owner can revoke the tool's access at any time at
+<a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>;
+revocation immediately stops all API access, and local caches can be deleted by removing the tool's data folder.</p>
+
+<h2>7. Deletion requests</h2>
+<p>If you commented on one of the owner's videos and want your comment removed from the local cache, email the address below;
+it is deleted within 7 days (deleting your comment on YouTube also removes it from the cache at the next refresh).</p>
+
+<h2>8. Contact</h2>
+<p>Email: <a href="mailto:aaisaac15@gmail.com">aaisaac15@gmail.com</a></p>
+
+<h2>9. Changes</h2>
+<p>Changes to this policy are published on this page with a new effective date.</p>
+</main>
+</body>
+</html>
